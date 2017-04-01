@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="informacja_login" layoutX="19.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalogowano na pocztę: " />
+      <Button fx:id="wyslij_wiadomosc" layoutX="503.0" layoutY="416.0" mnemonicParsing="false" onAction="#send" text="Wyślij wiadomość" />
+      <TextField fx:id="wyswietl_dane" layoutX="33.0" layoutY="68.0" opacity="0.45" prefHeight="308.0" prefWidth="675.0" />
+      <Text layoutX="33.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odebrane wiadomości" />
+      <TextField fx:id="adresat_wprowadz" layoutX="100.0" layoutY="416.0" opacity="0.39" prefHeight="17.0" prefWidth="350.0" />
+      <Text layoutX="33.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nowa wiadomość" />
+      <Text layoutX="45.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresat" />
+      <TextField fx:id="temat_wprowadz" layoutX="100.0" layoutY="450.0" opacity="0.39" prefHeight="17.0" prefWidth="350.0" />
+      <Text layoutX="45.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temat" />
+      <TextField fx:id="tekst_wprowadz" layoutX="100.0" layoutY="488.0" opacity="0.39" prefHeight="88.0" prefWidth="593.0" />
+      <Text layoutX="45.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Treść" />
+   </children>
+</Pane>

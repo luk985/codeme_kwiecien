@@ -3,27 +3,26 @@ package poczta;
 import java.util.Scanner;
 
 public class Main {
+	
+	public String host = "pop3.wp.pl";
+	public String host2 = "smtp.wp.pl";
+	public String storeType = "pop3s";
+	public String user = "poczta_codeme";
+	public String password = "Javajava";
+	public String adressEmail = "poczta_codeme@wp.pl";
 
 	public static void main (String[] args) {
+
+
 		
-		//Sprawdzanie po³¹czenia z poczt¹
-		String host = "pop3.wp.pl";
-		String host2 = "smtp.wp.pl";
-		String storeType = "pop3s";
-		String user = "poczta_codeme";
-		String password = "Javajava";
-		String adressEmail = "poczta_codeme@wp.pl";
+	}
+}
+
 		
-		int wyborPoczta;
-		
-		CheckingMails CheckingMails = new CheckingMails();
-		SendingEmails SendingEmails = new SendingEmails();
-		ConsoleClear ConsoleClear = new ConsoleClear();
+		/*
 		Login Login = new Login();
-		
 		Scanner klawiatura = new Scanner(System.in);
 		
-		Login.LoginIn(host, storeType, user, password);
 
 		System.out.println("Jesteœ zalogowany do poczty");
 		System.out.println("Adres poczty: poczta_codeme@wp.pl\n");
@@ -46,7 +45,5 @@ public class Main {
 			default: System.out.println("Wybierz ponownie opcje");
 		}
 
+	*/
 
-
-	}
-}
