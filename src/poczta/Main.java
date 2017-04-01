@@ -2,7 +2,14 @@ package poczta;
 
 import java.util.Scanner;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+
+public class Main extends Application {
 	
 	public String host = "pop3.wp.pl";
 	public String host2 = "smtp.wp.pl";
@@ -10,11 +17,25 @@ public class Main {
 	public String user = "poczta_codeme";
 	public String password = "Javajava";
 	public String adressEmail = "poczta_codeme@wp.pl";
-
-	public static void main (String[] args) {
-
-
 		
+		@Override
+		public void start(Stage primaryStage) {
+			try {
+				Pane root = (Pane)FXMLLoader.load(getClass().getResource("Window.fxml"));
+				Scene scene = new Scene(root,750,600);
+				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+				primaryStage.setScene(scene);
+				primaryStage.show();
+			
+			} catch(Exception e) {
+				e.printStackTrace();
+		}
+	}
+			
+			
+	public static void main (String[] args) {
+		launch(args);
+
 	}
 }
 
