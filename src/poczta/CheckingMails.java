@@ -12,7 +12,8 @@ import javax.mail.Store;
 
 public class CheckingMails {
 	
-	public static void check(String host, String storeType, String user, String password) {
+	public static void check(String host, String storeType, String user, String password) {	
+		System.out.println("£¹czenie z poczt¹ (odczytywanie)...");
 		try {
 			Properties properties = new Properties();
 				properties.put("mail.pop3.host", host);  //
@@ -21,7 +22,7 @@ public class CheckingMails {
 				Session emailSession = Session.getDefaultInstance(properties);
 			
 			//Utworzenie obiektu poczty POP3 i po³¹czenie z serwerem pop
-				Store store = emailSession.getStore("pop3s");
+				Store store = emailSession.getStore(storeType);
 				store.connect(host, user, password);
 				
 			//Utworzenie folderu poczty
