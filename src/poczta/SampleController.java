@@ -27,7 +27,7 @@ public class SampleController {
 	@FXML
 	protected TextField tekst_wprowadz;
 	
-	
+    @FXML
 	protected void send(ActionEvent event) {
 		wpisanyAdresat = adresat_wprowadz.getText();
 		wpisanyTematWiadomosci = temat_wprowadz.getText();

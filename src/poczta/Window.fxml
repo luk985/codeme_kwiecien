@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poczta.SampleController">
    <children>
       <Text fx:id="informacja_login" layoutX="19.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalogowano na pocztę: " />
       <Button fx:id="wyslij_wiadomosc" layoutX="503.0" layoutY="416.0" mnemonicParsing="false" onAction="#send" text="Wyślij wiadomość" />
@@ -19,5 +18,6 @@
       <Text layoutX="45.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temat" />
       <TextField fx:id="tekst_wprowadz" layoutX="100.0" layoutY="488.0" opacity="0.39" prefHeight="88.0" prefWidth="593.0" />
       <Text layoutX="45.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Treść" />
+      <Button fx:id="odswiez" layoutX="503.0" layoutY="30.0" mnemonicParsing="false" onAction="#odswiez" opacity="0.5" prefHeight="25.0" prefWidth="110.0" text="Odśwież" />
    </children>
 </Pane>
